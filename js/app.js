@@ -1,5 +1,7 @@
 'use strict';
 let score=0;
+
+
 let userName = prompt('Whats your name please?').toUpperCase();
 
 alert ('Welcome '+ userName +' we wil ask you a few questions about Sereen Aldaqamsih.');
@@ -49,6 +51,7 @@ case 'n':
 }
 question1();
 
+
 //q2
 let question2 = function(){
 let userWork = prompt('Is Sereen engineer?').toLowerCase();
@@ -80,10 +83,12 @@ switch (userWork)
      break;
 }
 }
+
 question2();
 
 
 let question3 = function(){
+
 let userExp = prompt("Sereen didn't work any where befor?").toLowerCase();
 switch (userExp)
 {
@@ -113,6 +118,7 @@ case 'no':
         console.log("I have 4 years experience as electrical engineer");
         break;}
 }
+
 question3();
 
 //q4
@@ -145,10 +151,13 @@ switch (userUni){
                     break;
 }
 }
+
 question4();
 
 //q5
-let question5 = function(){
+
+let qustion5 =function(){
+
 let userChild= prompt("Is Sereen a mother?").toLowerCase();
 switch (userChild){
     case 'yes':
@@ -176,6 +185,7 @@ switch (userChild){
                    break;
         }
     }
+
 question5();
 
 //q6
@@ -217,6 +227,7 @@ question6();
 
 //q7
 let question7 = function(){
+
 let userKnow=prompt('Guess the name of jordanian city sereen like it?').toLowerCase();
 console.log(userKnow);
 let userAnswer=['irbid','amman','salt','aqaba','petra'];
@@ -245,9 +256,9 @@ let books=false;
         alert('sorry youre answer wrong, the true answer is irbid or amman or salt,aqaba,petra.');
     }
 
+
 }
 question7();
-
 
 alert( 'welcome '+userName+', Thank you for your time.your score in this game its '+score);
 lert ('This is the true answer for all 7 question: serren in jordan,shes an engineer,she was worked as electrical engineer,graduated from yarmouk university,sereen mother for one child, was born in 1991,sereen like irbid city and amman,aqaba,petra and salt.');
